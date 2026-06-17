@@ -27,4 +27,4 @@ Project ini merupakan website sederhana Data Warehouse untuk studi kasus toko re
 1. Clone repository ini ke folder `htdocs` XAMPP:
 
 ```bash
-git clone link-repository-kamu
+git clone https://github.com/Argantapramata/data-warehouse-retail-online.git
