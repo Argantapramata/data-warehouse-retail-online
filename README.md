@@ -28,3 +28,50 @@ Project ini merupakan website sederhana Data Warehouse untuk studi kasus toko re
 
 ```bash
 git clone https://github.com/Argantapramata/data-warehouse-retail-online.git
+```
+
+2. Jalankan XAMPP:
+
+- Apache = Start
+- MySQL = Start
+
+3. Buka MySQL Workbench atau phpMyAdmin.
+
+4. Buat database dengan nama:
+
+```sql
+CREATE DATABASE dw_retail_online;
+```
+
+5. Import file `database.sql` ke database `dw_retail_online`.
+
+6. Pastikan konfigurasi database di file `config.php` seperti berikut:
+
+```php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "dw_retail_online";
+```
+
+7. Buka project di browser:
+
+```text
+http://localhost/data-warehouse-retail-online/
+```
+
+Jika folder project diubah namanya menjadi `dw_retail_online`, maka buka:
+
+```text
+http://localhost/dw_retail_online/
+```
+
+## Struktur Database
+
+Database menggunakan Star Schema dengan tabel:
+
+- `dim_produk`
+- `dim_pelanggan`
+- `dim_waktu`
+- `fact_penjualan`
+
